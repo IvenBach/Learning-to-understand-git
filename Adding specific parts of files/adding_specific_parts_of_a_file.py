@@ -10,6 +10,8 @@ def multiplying_two_numbers(multiplier, multiplicand):
     return multiplier * multiplicand
 
 def dividing_two_numbers(numerator, denominator):
+    if denominator == 0:
+        raise ValueError("Denominator cannot be zero.")
     return numerator / denominator
 
 # Plenty of code in between
